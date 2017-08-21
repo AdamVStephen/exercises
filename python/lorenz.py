@@ -42,7 +42,7 @@ def rkint(x=1.,y=1.,z=1.,t=1,dt = 0.01, f=lorenz):
         tnow = tnow + dt
     return data
 
-def plotit(ldata):
+ def plotit(ldata):
     fig = plt.figure()
     ax = fig.gca(projection='3d')
     ax.plot(ldata[:,0], ldata[:,1],ldata[:,2], lw=0.5)
